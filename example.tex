@@ -1,0 +1,45 @@
+\documentclass[final,dvipdfmx,t]{beamer}
+
+\mode<presentation>
+{
+	\usetheme{iceberg}
+}
+
+\usepackage[orientation=landscape,size=a0,scale=1.4]{beamerposter}
+\usepackage[japanese]{babel}
+\AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
+
+\setbeamertemplate{footline}{}
+
+\setbeamerfont{block title}{size=\large,series=\bf}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{itemize items}[default]
+
+\title[]{Randomized SVD on TensorCores}
+\author[]{enp1s0\inst{1}, tsuki\inst{2} }
+\institute[shortinst]{\inst{1} School of Computing, TokyoTech
+					  \inst{2} Global Scientific Information and Computing Center, TokyoTech}
+
+\begin{document}
+\begin{columns}
+	\begin{column}{0.49\textwidth}
+		\begin{frame}{Frame 0}
+			\begin{block}{Block 0}
+				\begin{itemize}
+					\item poi
+					\item poi
+					\item poi
+					\item poi
+				\end{itemize}
+			\end{block}
+		\end{frame}
+	\end{column}
+	\begin{column}{0.49\textwidth}
+		\begin{frame}{Frame 1}
+			hoge
+		\end{frame}
+	\end{column}
+\end{columns}
+\end{document}
