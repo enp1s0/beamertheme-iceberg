@@ -3,13 +3,15 @@
 \ProvidesPackage{beamerthemeiceberg}
 
 \definecolor{iceberg_white}{HTML}{c6c8d1}
-\definecolor{iceberg_black}{HTML}{161821}
+\definecolor{iceberg_black}{HTML}{0f1117}
+\definecolor{iceberg_dark}{HTML}{161821}
 \definecolor{iceberg_green}{HTML}{e2a478}
 \definecolor{iceberg_blue}{HTML}{b4be82}
 \definecolor{iceberg_red}{HTML}{e27878}
 \definecolor{iceberg_orange}{HTML}{e27878}
 \definecolor{iceberg_purple}{HTML}{b4be82}
-\definecolor{iceberg_gray}{HTML}{1e2132}
+\definecolor{iceberg_darkblue}{HTML}{1e2132}
+\definecolor{iceberg_gray}{HTML}{6b7089}
 
 \usetheme{default}
 
@@ -24,7 +26,7 @@
 \setbeamertemplate{frametitle}
 {
 	\nointerlineskip
-	\setbeamercolor{frametitlecolor}{bg=iceberg_gray, fg=iceberg_white}
+	\setbeamercolor{frametitlecolor}{bg=iceberg_black, fg=iceberg_white}
 	\begin{beamercolorbox}[sep=0.3cm,ht=1.6em,wd=\paperwidth]{frametitlecolor}
 		\strut\insertframetitle\strut
 		\hfill
@@ -32,6 +34,7 @@
 }
 
 % Header
+\setbeamercolor{headline}{bg=iceberg_black}
 \setbeamertemplate{headline}{
 	\leavevmode
 	\begin{beamercolorbox}[wd=\paperwidth]{headline}
