@@ -47,14 +47,12 @@
 \setbeamercolor{block body}{bg=iceberg_white, fg=iceberg_black}
 \setbeamercolor{block title alerted}{bg=iceberg_red, fg=iceberg_black}
 \setbeamercolor{block title example}{bg=iceberg_green, fg=iceberg_black}
-\addtobeamertemplate{block begin}
-{}
-{\vspace{0.4ex plus 0.1ex minus 0.1ex}
-\setlength{\parskip}{4pt plus 1pt minus 1pt}}
+
+\addtobeamertemplate{block begin}{\vskip -\bigskipamount}{}
 
 \addtobeamertemplate{block end}
 {\vspace{0.4ex plus 0.1ex minus 0.1ex}}
-
+{\vskip -\bigskipamount}
 
 % Header
 \setbeamercolor{headline}{bg=iceberg_black}
@@ -75,4 +73,5 @@
 		\end{columns}
 		\vskip2ex
 	\end{beamercolorbox}
+	\vspace{-1em}
 }
