@@ -22,7 +22,16 @@
 
 % Text
 \setbeamercolor{normal text}{bg=iceberg_black, fg=iceberg_white}
+\setbeamercolor{alerted text}{fg=iceberg_red}
 
+\setbeamertemplate{itemize item}{--}%
+\setbeamertemplate{itemize item}{--}%
+\setbeamertemplate{itemize subitem}{--}%
+\setbeamertemplate{itemize subsubitem}{--}%
+
+\setbeamerfont*{block itemize/enumerate body}{size=\fontsize{\blockbodysize}{\bodylineheightmultiplier\blockbodysize}}
+\setbeamerfont*{itemize/enumerate subbody}{parent=itemize/enumerate body}
+\setbeamerfont*{itemize/enumerate subsubbody}{parent=itemize/enumerate body}
 
 % Frame
 \setbeamertemplate{frametitle}
