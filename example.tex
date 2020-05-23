@@ -17,6 +17,36 @@
 \setbeamertemplate{enumerate items}[default]
 \setbeamertemplate{itemize items}[default]
 
+\setbeamertemplate{headline}{
+	\leavevmode
+	\begin{beamercolorbox}[wd=\paperwidth]{headline}
+		\begin{columns}[T]
+			\begin{column}{.02\paperwidth}
+			\end{column}
+			\begin{column}{.78\paperwidth}
+				\vskip8ex
+				\usebeamercolor{title in headline}{\color{fg}\textbf{\veryHuge{\inserttitle}}\\[1ex]}
+				\usebeamercolor{author in headline}{\color{fg}\large{\insertauthor}\\[1ex]}
+				\usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}
+			\end{column}
+			\begin{column}{0.06\textwidth}
+			\end{column}
+			\begin{column}{0.06\textwidth}
+			\end{column}
+			\begin{column}{.06\paperwidth}
+				\vskip1cm
+				\vspace{10mm}
+				\includegraphics[width=.7\linewidth]{logo-0.pdf}
+				\hskip1cm
+			\end{column}
+			\begin{column}{0.02\textwidth}
+			\end{column}
+		\end{columns}
+		\vskip2ex
+	\end{beamercolorbox}
+	\vspace{-1em}
+}
+
 \title[]{Iceberg for Beamer}
 \author[]{enp1s0\inst{1}, tsuki\inst{2} }
 \institute[shortinst]{\inst{1} School of Computing, TokyoTech
@@ -25,7 +55,7 @@
 \begin{document}
 \begin{frame}
 	\begin{columns}
-		\begin{column}{0.49\textwidth}
+		\begin{column}{0.485\textwidth}
 			\begin{block}{Block 0}
 				\begin{itemize}
 					\item poi
@@ -35,17 +65,19 @@
 				\end{itemize}
 			\end{block}
 			\begin{columns}
-				\begin{column}{0.49\textwidth}
+				\begin{column}{0.485\textwidth}
 					\begin{block}{Block 0-0}
 					\end{block}
 				\end{column}
-				\begin{column}{0.49\textwidth}
+				\begin{column}{0.0001\textwidth}
+				\end{column}
+				\begin{column}{0.485\textwidth}
 					\begin{block}{Block 0-1}
 					\end{block}
 				\end{column}
 			\end{columns}
 		\end{column}
-		\begin{column}{0.49\textwidth}
+		\begin{column}{0.485\textwidth}
 			\begin{block}{Block 1}
 				\begin{enumerate}
 					\item poi
