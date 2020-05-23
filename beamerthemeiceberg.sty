@@ -2,7 +2,7 @@
 
 \ProvidesPackage{beamerthemeiceberg}
 
-\definecolor{iceberg_white}{HTML}{c6c8d1}
+\definecolor{iceberg_lightgray}{HTML}{c6c8d1}
 \definecolor{iceberg_black}{HTML}{0f1117}
 \definecolor{iceberg_dark}{HTML}{161821}
 \definecolor{iceberg_green}{HTML}{e2a478}
@@ -19,7 +19,7 @@
 \setbeamercolor{background canvas}{bg=iceberg_gray}
 
 % Text
-\setbeamercolor{normal text}{bg=iceberg_black, fg=iceberg_white}
+\setbeamercolor{normal text}{bg=iceberg_black, fg=iceberg_lightgray}
 \setbeamercolor{alerted text}{fg=iceberg_red}
 
 \setbeamercolor{itemize item}{fg=iceberg_dark}
@@ -34,7 +34,7 @@
 \setbeamertemplate{frametitle}
 {
 	\nointerlineskip
-	\setbeamercolor{frametitlecolor}{bg=iceberg_black, fg=iceberg_white}
+	\setbeamercolor{frametitlecolor}{bg=iceberg_black, fg=iceberg_lightgray}
 	\begin{beamercolorbox}[sep=0.3cm,ht=1.6em,wd=\paperwidth]{frametitlecolor}
 		\strut\insertframetitle\strut
 		\hfill
@@ -42,8 +42,8 @@
 }
 
 % Block
-\setbeamercolor{block title}{bg=iceberg_darkblue, fg=iceberg_white}
-\setbeamercolor{block body}{bg=iceberg_white, fg=iceberg_black}
+\setbeamercolor{block title}{bg=iceberg_darkblue, fg=iceberg_lightgray}
+\setbeamercolor{block body}{bg=iceberg_lightgray, fg=iceberg_black}
 \setbeamercolor{block title alerted}{bg=iceberg_red, fg=iceberg_black}
 \setbeamercolor{block title example}{bg=iceberg_green, fg=iceberg_black}
 
@@ -63,7 +63,7 @@
 			\end{column}
 			\begin{column}{.78\paperwidth}
 				\vskip8ex
-				\usebeamercolor{title in headline}{\color{fg}\textbf{\veryHuge{\inserttitle}}\\[1ex]}
+				\usebeamercolor{title in headline}{\color{white}\textbf{\veryHuge{\inserttitle}}\\[1ex]}
 				\usebeamercolor{author in headline}{\color{iceberg_blue}\large{\insertauthor}\\[1ex]}
 				\usebeamercolor{institute in headline}{\color{iceberg_purple}\large{\insertinstitute}\\[1ex]}
 			\end{column}
