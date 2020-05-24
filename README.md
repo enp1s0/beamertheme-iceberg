@@ -2,6 +2,8 @@
 
 # iceberg for beamer
 
+This beamer theme is inspired by a vim colorscheme [iceberg](https://github.com/cocopon/iceberg.vim).
+
 ## Samples
 
 ### poster
