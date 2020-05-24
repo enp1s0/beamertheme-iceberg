@@ -15,46 +15,53 @@
 \setbeamertemplate{frametitle}
 {
 	\nointerlineskip
-	\setbeamercolor{frametitlecolor}{bg=iceberg_black, fg=iceberg_lightgray}
-	\begin{beamercolorbox}[sep=0.3cm,ht=1.6em,wd=\paperwidth]{frametitlecolor}
+	\begin{beamercolorbox}[sep=0.04cm,ht=1.6em,wd=\paperwidth]{frametitlecolor}
 		\strut\insertframetitle\strut
 		\hfill
 	\end{beamercolorbox}
 }
 
-% Block
-\addtobeamertemplate{block begin}{\vskip -\bigskipamount}{}
-
-\addtobeamertemplate{block end}
-{\vspace{0.4ex plus 0.1ex minus 0.1ex}}
-{\vskip -\bigskipamount}
-
 % Header
-\setbeamercolor{headline}{bg=iceberg_black}
 \setbeamertemplate{headline}{
 	\leavevmode
-	\begin{beamercolorbox}[wd=\paperwidth]{headline}
-		%\begin{columns}[T]
-		%	\begin{column}{.02\paperwidth}
-		%	\end{column}
-		%	\begin{column}{.78\paperwidth}
-		%		\vskip8ex
-		%		\textbf{\veryHuge{\inserttitle}}\\[1ex]
-		%		\large{\insertauthor}\\[1ex]
-		%		\large{\insertinstitute}\\[1ex]
-		%	\end{column}
-		%	\begin{column}{.2\paperwidth}
-		%	\end{column}
-		%\end{columns}
-		%\vskip2ex
-	\end{beamercolorbox}
-	\vspace{-1em}
 }
 
 % Title page
-\makeatletter
-\setbeamertemplate{title page}[default][left,colsep=-4bp,rounded=true]
-\makeatother
+\setbeamertemplate{title page}{
+	\vskip2ex
+	\usebeamerfont{title}
+	\usebeamercolor[fg]{title}
+	{\Huge\inserttitle}
+	\ifx\insertsubtitle\@empty
+	\else
+	\vskip2ex
+	\usebeamerfont{subtitle}
+	\usebeamercolor[fg]{subtitle}
+	\insertsubtitle
+	\fi
+	\ifx\insertauthor\@empty
+	\else
+	\vskip10ex
+	\usebeamerfont{author}
+	\usebeamercolor[fg]{author}
+	\insertauthor
+	\fi
+	\ifx\insertinstitute\@empty
+	\else
+	\vskip2ex
+	\usebeamerfont{institute}
+	\usebeamercolor[fg]{institute}
+	\insertinstitute%
+	\fi
+	\ifx\insertdate\@empty
+	\else
+	\vskip2ex
+	\usebeamerfont{date}
+	\usebeamercolor[fg]{date}
+	\insertdate%
+	\fi
+	\vfill
+}
 
 \setbeamertemplate{footline}[frame number]
 \setbeamertemplate{navigation symbols}{}
