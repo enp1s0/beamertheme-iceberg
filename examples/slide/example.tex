@@ -1,8 +1,9 @@
-\documentclass[dvipdfmx,14pt,professional font,aspectratio=169]{beamer}
+\documentclass[dvipdfmx,11pt,professional font,aspectratio=169]{beamer}
 \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
 
 \mode<presentation> {
 	\usepackage{../../beamerthemeiceberg}
+	\usepackage{../../beamercolorthemeiceberg}
 }
 
 \usepackage[japanese]{babel}
@@ -16,9 +17,12 @@
 
 \begin{document}
 \begin{frame}
-	\maketitle
+	\titlepage
 \end{frame}
-\begin{frame}{frame}
+
+\section{Section 0}
+\subsection{Subsection 0-0}
+\begin{frame}{Frame 0}
 	\begin{block}{Block 0}
 		\begin{enumerate}
 			\item poipoi
@@ -31,5 +35,8 @@
 	\begin{block}{Block 1}
 		poi
 	\end{block}
+\end{frame}
+\subsection{Subsection 0-1}
+\begin{frame}{Frame 1}
 \end{frame}
 \end{document}
