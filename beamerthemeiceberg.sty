@@ -2,32 +2,12 @@
 
 \ProvidesPackage{beamerthemeiceberg}
 
-\definecolor{iceberg_white}{HTML}{eff0f4}
-\definecolor{iceberg_lightgray}{HTML}{c6c8d1}
-\definecolor{iceberg_black}{HTML}{0f1117}
-\definecolor{iceberg_dark}{HTML}{161821}
-\definecolor{iceberg_green}{HTML}{e2a478}
-\definecolor{iceberg_blue}{HTML}{84a0c6}
-\definecolor{iceberg_red}{HTML}{cc517a}
-\definecolor{iceberg_orange}{HTML}{e27878}
-\definecolor{iceberg_purple}{HTML}{a093c7}
-\definecolor{iceberg_darkblue}{HTML}{1e2132}
-\definecolor{iceberg_gray}{HTML}{6b7089}
-
 \usetheme{default}
+\beamertemplatenavigationsymbolsempty
 
-% Background
-\setbeamercolor{background canvas}{bg=iceberg_gray}
-
-% Text
-\setbeamercolor{normal text}{bg=iceberg_black, fg=iceberg_lightgray}
-\setbeamercolor{alerted text}{fg=iceberg_red}
-
-\setbeamercolor{itemize item}{fg=iceberg_dark}
 \setbeamertemplate{itemize subitem}{fg=iceberg_dark}
 \setbeamertemplate{itemize subsubitem}{fg=iceberg_dark}
 
-\setbeamercolor{enumerate item}{fg=iceberg_dark}
 \setbeamertemplate{enumerate subitem}{fg=iceberg_dark}
 \setbeamertemplate{enumerate subsubitem}{fg=iceberg_dark}
 
@@ -43,11 +23,6 @@
 }
 
 % Block
-\setbeamercolor{block title}{bg=iceberg_darkblue, fg=iceberg_white}
-\setbeamercolor{block body}{bg=iceberg_lightgray, fg=iceberg_black}
-\setbeamercolor{block title alerted}{bg=iceberg_red, fg=iceberg_black}
-\setbeamercolor{block title example}{bg=iceberg_green, fg=iceberg_black}
-
 \addtobeamertemplate{block begin}{\vskip -\bigskipamount}{}
 
 \addtobeamertemplate{block end}
@@ -64,9 +39,9 @@
 			\end{column}
 			\begin{column}{.78\paperwidth}
 				\vskip8ex
-				\usebeamercolor{title in headline}{\color{iceberg_white}\textbf{\veryHuge{\inserttitle}}\\[1ex]}
-				\usebeamercolor{author in headline}{\color{iceberg_blue}\large{\insertauthor}\\[1ex]}
-				\usebeamercolor{institute in headline}{\color{iceberg_purple}\large{\insertinstitute}\\[1ex]}
+				\textbf{\veryHuge{\inserttitle}}\\[1ex]
+				\large{\insertauthor}\\[1ex]
+				\large{\insertinstitute}\\[1ex]
 			\end{column}
 			\begin{column}{.2\paperwidth}
 			\end{column}
@@ -75,3 +50,11 @@
 	\end{beamercolorbox}
 	\vspace{-1em}
 }
+
+% Title page
+\makeatletter
+\setbeamertemplate{title page}[default][left,colsep=-4bp,rounded=true]
+\makeatother
+
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{navigation symbols}{}
