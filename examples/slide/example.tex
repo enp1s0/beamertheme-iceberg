@@ -1,0 +1,35 @@
+\documentclass[dvipdfmx,14pt,professional font,aspectratio=169]{beamer}
+\AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
+
+\mode<presentation> {
+	\usepackage{../../beamerthemeiceberg}
+}
+
+\usepackage[japanese]{babel}
+\AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
+
+\title[]{Iceberg for Beamer}
+\author[]{enp1s0\inst{1}, tsuki\inst{2} }
+\institute[shortinst]{\inst{1} School of Computing, TokyoTech
+	\inst{2} Global Scientific Information and Computing Center, TokyoTech}
+\date{}
+
+\begin{document}
+\begin{frame}
+	\maketitle
+\end{frame}
+\begin{frame}{frame}
+	\begin{block}{Block 0}
+		\begin{enumerate}
+			\item poipoi
+			\item poi
+		\end{enumerate}
+		\begin{itemize}
+			\item poi
+		\end{itemize}
+	\end{block}
+	\begin{block}{Block 1}
+		poi
+	\end{block}
+\end{frame}
+\end{document}
